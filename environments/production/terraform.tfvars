@@ -4,7 +4,7 @@
 #
 # Configure actual values before deploying production infrastructure.
 
-network_name = "default"
+# network_name = "default"
 
 # Set base_image to the production image path:
 # base_image = "/var/lib/libvirt/images/noble-server-cloudimg-amd64.img"
