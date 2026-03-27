@@ -16,17 +16,6 @@
 #   ssh_public_key = var.ssh_public_key
 # }
 
-terraform {
-  required_version = ">= 1.6"
-
-  required_providers {
-    libvirt = {
-      source  = "dmacvicar/libvirt"
-      version = "~> 0.8"
-    }
-  }
-}
-
 provider "libvirt" {
   uri = var.libvirt_uri
 }
