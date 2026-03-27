@@ -1,0 +1,76 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug. Please fill in as much detail as possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. cd environments/lab
+        2. tofu init
+        3. tofu plan
+        4. Observe error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tofu_version
+    attributes:
+      label: OpenTofu Version
+      description: Output of `tofu version`
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: provider_versions
+    attributes:
+      label: Provider Versions
+      description: Output of `tofu providers` or relevant provider version from `versions.tf`
+      render: shell
+    validations:
+      required: false
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Which environment are you working in?
+      options:
+        - lab
+        - production
+        - other (describe in additional context)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, logs, or screenshots about the issue.
+    validations:
+      required: false
