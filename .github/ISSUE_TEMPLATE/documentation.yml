@@ -1,0 +1,34 @@
+name: Documentation Issue
+description: Report missing, incorrect, or unclear documentation
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the documentation.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what is missing, incorrect, or unclear.
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: File path or URL of the documentation that needs attention.
+      placeholder: "modules/libvirt-vm/README.md or https://..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context or suggestions for improving the documentation.
+    validations:
+      required: false

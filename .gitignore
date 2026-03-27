@@ -1,0 +1,36 @@
+# OpenTofu
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Sensitive variable files (keep examples)
+*.auto.tfvars
+# terraform.tfvars is tracked per-environment with non-secret defaults
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.pem
+*.key
+
+# Temporary
+*.tmp
+*.bak
+*.log
