@@ -48,7 +48,7 @@ infra-ops/
 │   └── libvirt-vm/              # KVM/libvirt VM provisioning module
 ├── environments/
 │   ├── lab/                     # Lab environment (local state)
-│   └── production/              # Production environment (remote state)
+│   └── production/              # Production environment (remote backend required; local placeholder, no resources yet)
 ├── scripts/
 │   └── init-backend.sh          # Backend initialization helper
 └── .github/
